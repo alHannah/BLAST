@@ -1,0 +1,47 @@
+/* About Banner Section */
+.about-banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title h1{
+    color: #ed9725; /* Orange text */
+    text-shadow: 
+      -2px -2px 0 #ffffff,  
+       2px -2px 0 #ffffff,  
+      -2px  2px 0 #ffffff,  
+       2px  2px 0 #ffffff,
+      -2px  0px 0 #ffffff,
+       2px  0px 0 #ffffff,
+       0px -2px 0 #ffffff,
+       0px  2px 0 #ffffff; /* White outline */
+    font-weight: bold;
+    font-size: 15rem; /* Adjust size */
+    letter-spacing: 1rem; /* Gaps between letters */
+    text-transform: uppercase;
+    font-family: 'PridiBold';
+    text-align: center;
+    padding: 20rem;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(255, 165, 0, 0.9), white);
+    padding: 5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.517);
+    width: 100%;
+    max-width: 100%;
+    height: max-content;
+}
+
+.content p {
+    font-size: 2rem;
+    line-height: 1.8;
+    color: #363e0e;
+}

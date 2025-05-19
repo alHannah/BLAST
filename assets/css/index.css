@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('../fonts/IBMPlexSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PridiBold';
+  src: url('../fonts/Pridi-Bold.ttf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* 
+
+EXCLUSIVE OFFER STYLE
+
+ */
+
+
+.exclusive-area-section {
+  padding: 5rem 1rem;
+  background-color: #f9f9f9;
+  font-family: 'IBMPlexSans';
+}
+
+/* .exclusive-area-container {} */
+
+.exclusive-area-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.text-container {
+  font-size: clamp(5rem, 6vw, 9rem); /* Responsive scaling */
+  text-align: center;
+  font-family: 'PridiBold';
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+}
+
+.exclusive {
+  font-family: 'PridiBold';
+  font-weight: bolder;
+  color: #363e0e; /* Dark green color */
+  text-shadow: 3px 3px #d7d6b8; /* Light shadow */
+}
+
+.offers {
+  font-family: 'PridiBold';
+  font-weight: bolder;
+  color: #ed9725; /* Orange color */
+  text-shadow: 3px 3px #d7d6b8; /* Light shadow */
+}
+/* 
+.exclusive-area-header h2 {
+  font-size: clamp(5rem, 6vw, 9rem);
+  font-weight: bold;
+  color: #363e0e;
+  margin: 0;
+  font-family: 'PridiBold';
+  text-transform: uppercase;
+  text-shadow: #888;
+}
+
+.exclusive-area-header h3 {
+  font-size: clamp(6rem, 8vw, 12rem);
+  color: #363e0e;
+  margin-top: 0.5rem;
+} */
+
+.exclusive-area-header p {
+  font-size: clamp(2rem, 3vw, 4rem);
+  color: #363e0e;
+  margin-top: 0.5rem;
+}
+
+
+.exclusive-offers {
+    background-color: #f8f9fa;
+    padding: 70px 0;
+  }
+  
+  .exclusive-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .exclusive-subtitle {
+    font-size: 2rem;
+    color: #666;
+  }
+  
+  .offer-box {
+    background-color: #fff;
+    display: flex;
+  }
+
+  .sale-container {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .sale-container-col {
+    display: flex;
+    gap: 2rem;
+  }
+  .sale-container-col img{
+    height: 48rem;
+    object-fit: contain;
+  }
+  
+  .sale-container-row {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .sale-container-row img{
+    height: 23rem;
+    object-fit: contain;
+  }
+  
+/* 
+
+EXPLORE STYLE
+
+ */
+
+
+.explore-area-section {
+  padding: 5rem 1rem;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.explore-area-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.explore-area-header h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* Responsive scaling */
+  font-weight: bold;
+  color: #363e0e;
+  margin: 0;
+}
+
+.explore-area-header h3 {
+  font-size: clamp(6rem, 8vw, 12rem);
+  color: #363e0e;
+  margin-top: 0.5rem;
+}
+
+.explore-area-header p {
+  font-size: clamp(4rem, 6vw, 8rem);
+  color: #363e0e;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+.explore-area-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid for responsive layout */
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.explore-area-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: auto;
+  aspect-ratio: 3 / 4; /* Maintain aspect ratio */
+}
+
+.explore-area-thumb {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.explore-area-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.explore-area-item:hover .explore-area-thumb {
+  transform: scale(1.05);
+}
+
+.explore-area-item:hover .explore-area-overlay {
+  opacity: 1;
+}
+
+
+
+  /* 
+  
+  PRODUCT STYLE
+  
+  */
+
+  
+/* .product-area-section {
+  padding: 5rem 1rem;
+  background-color: #f9f9f9;
+  font-family: 'PridiBold';
+} */
+
+/* .parent-product-div {
+} */
+
+/* 
+PRODUCT AREA CONTAINER AND HEADER IS SKIPPED SINCE IT HAS NO DATA
+*/
+
+.product-area-holder{
+  /* background-color: #ed9725; */
+  min-height: 70rem;
+  /* height: 100vh; */
+}
+
+.product-area-item {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  /* aspect-ratio: 3 / 4;  */
+
+  border: 3rem solid #363e0e;
+  padding: 15px;
+  text-align: center;
+}
+
+
+.product-card {
+  height: 50rem;
+  border: 0.5rem solid #363e0e;
+  position: relative;
+  overflow: hidden;
+  margin: 1rem;
+  padding: 1rem;
+  border-bottom: 6rem solid #363e0e;
+  border-bottom-right-radius: 6rem;
+  }
+  
+.photo {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.category-logo {
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  top: 57%;
+  left: 71%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 0.9rem solid #363e0e;
+  z-index: 99999999;
+}
+  
+.price-rating-container {
+  position: absolute;
+  z-index: 9999999;
+  top: 63%;
+  left: 0;
+  display: flex;
+  font-family: 'IBMPlexSans';
+  align-items: center;
+  /* gap: 3rem; */
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 2rem;
+}
+
+.badge {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+.badge-top-sale {
+  background-color: #ed9725;
+  top: 90%;
+  right: 60%;
+  
+}
+
+.badge-best-seller {
+  background-color: #67731b;
+  top: 90%;
+  right: 47%;
+}
+
+/* .price {
+} */
+
+.current-price {
+  font-weight: bolder;
+  color: #ffffff;
+  font-size: 4rem;
+  margin-right: 1rem;
+}
+
+.old-price {
+  font-size: 2rem;
+  text-decoration: line-through;
+  color: #888;
+}
+
+.rating-area {
+  font-size: 2rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-right: 13rem;
+  padding-bottom: 1rem;
+}
+
+
+
+  /* Container for the product title */
+.product-title {
+  height: 10rem;
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Product Name Styling */
+.product-name-area {
+  text-align: left;
+  color: #363e0e;
+  font-size: 3rem; /* Adjust font size */
+  margin-bottom: 1rem; /* Space between title and button */
+}
+
+/* Buy Now Button */
+.product-btn-area {
+  background-color: #a1ae37; /* Match the button color */
+  color: #fff; /* White text */
+  font-weight: bold; /* Bold text */
+  font-size: 2rem; /* Button text size */
+  text-decoration: none; /* Remove underline */
+  border-radius: 10rem; /* Smooth rounded corners */
+  display: inline-block; /* Ensures the button behaves like a block element */
+  width: 23rem;
+  padding: 0.8rem 0.8rem;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for Button */
+.product-btn-area:hover {
+  background-color: #67731b; /* Slightly darker green */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.team-card {
+  height: 55rem;
+  position: relative;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.team-logo {
+  width: 9rem;
+  height: 9rem;
+  position: absolute;
+  top: 58%;
+  left: 75%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  z-index: 99999999;
+}
+
+.team-info {
+  /* padding-left: 2rem; */
+  margin: 0;
+}
+
+.team-info h1{
+  text-transform: uppercase;
+  color: #363e0e;
+  font-size: 5rem;
+}
+
+.team-info strong{
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 2rem;
+  background-color: #ed9725;
+  padding: 0.5rem 1rem;
+}
+
+.team-fname {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+  /* background-color: #0675e3; */
+}
+.team-role-info {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+  /* background-color: #0675e3; */
+}
+
+.team-section {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.team-header h1 {
+  font-family: 'PridiBold';
+  gap: 2rem;
+  display: flex;
+  font-size: 10rem;
+  margin: 0;
+  font-weight: bold;
+  margin-left: 3rem;
+  position: relative;
+}
+
+.team-header h1 span {
+  color: #f08c26; /* Orange color */
+}
+
+.team-header h1 span + span {
+  color: #4c4c23; /* Dark olive color */
+}
+
+.divider {
+  margin-right: 0;
+  /* flex-grow: 1; */
+  height: 0.5rem;
+  background-color: black;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: 9999999999999;
+  margin-left: 50%;
+}
